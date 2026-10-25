@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from transformers import AutoTokenizer, AutoModel, get_linear_schedule_with_warmup
 from .preprocess import clean_plm, remove_artifacts
-from .evaluate import report, best_threshold, set_seed, Timer
+from .eval import report, best_threshold, set_seed, Timer
 
 SENT = {"NEG": 0, "NEU": 1, "POS": 2}
 ARABERT = "aubmindlab/bert-base-arabertv02-twitter"
